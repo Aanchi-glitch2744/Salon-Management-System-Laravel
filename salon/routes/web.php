@@ -25,6 +25,10 @@ Route::get("/",[HomeController::class,"index"]);
 
 Route::get("/users",[AdminController::class,"user"]);
 
+Route::get("/servicesmenu",[AdminController::class,"servicesmenu"]);
+
+Route::post("/uploadservices",[AdminController::class,"upload"]);
+
 Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 Route::get("/redirects",[HomeController::class,"redirects"]);
