@@ -51,6 +51,7 @@
                     <th style="padding: 30px">Description</th>
                     <th style="padding: 30px">Image</th>
                     <th style="padding: 30px">Action 🛠</th>
+                    <th style="padding: 30px">Edit 🛠</th>
                </tr>
 
                @foreach($data as $data)
@@ -59,7 +60,8 @@
                     <td>{{$data->price}}</td>
                     <td>{{$data->description}}</td>
                     <td><img height="200" width="200" src="servicesimage/{{$data->image}}"></td>
-                    <td><a href="{{url('/deleteservices', $data->id)}}">Delete ❌</a></td>
+                    <td><a href="{{url('/deleteservices', $data->id)}}">Delete❌</a></td>
+                    <td><a href="{{url('/updateview', $data->id)}}">Update📝</a></td>
                </tr>
                @endforeach
            </table>

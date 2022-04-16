@@ -33,6 +33,10 @@ Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
 Route::get("/deleteservices/{id}",[AdminController::class,"deleteservices"]);
 
+Route::get("/updateview/{id}",[AdminController::class,"updateview"]);
+
+Route::post("/update/{id}",[AdminController::class,"update"]);
+
 Route::get("/redirects",[HomeController::class,"redirects"]);
 
 Route::middleware([
