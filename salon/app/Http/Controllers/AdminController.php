@@ -25,9 +25,17 @@ class AdminController extends Controller
         return redirect()->back();
     }
     
+    public function deleteservices($id)
+    {
+        $data= services::find($id); 
+        $data->delete();
+        return redirect()->back();
+    }
+    
     public function servicesmenu()
     {
-        return view("admin.servicesmenu");
+        $data= services::all();
+        return view("admin.servicesmenu", compact("data"));
     }
     
     public function upload(Request $request)

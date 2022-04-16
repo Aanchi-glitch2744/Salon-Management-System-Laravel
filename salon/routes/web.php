@@ -31,6 +31,8 @@ Route::post("/uploadservices",[AdminController::class,"upload"]);
 
 Route::get("/deleteuser/{id}",[AdminController::class,"deleteuser"]);
 
+Route::get("/deleteservices/{id}",[AdminController::class,"deleteservices"]);
+
 Route::get("/redirects",[HomeController::class,"redirects"]);
 
 Route::middleware([
