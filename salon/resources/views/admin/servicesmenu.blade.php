@@ -38,10 +38,11 @@
                  <input type="text" name="description" placeholder=" Description " required style="color:blue;"> 
             </div>
             <div style="margin-bottom: 20px;">
-                 <input style="color:pink; padding:2px; border:1px solid pink; background-color: green" type="submit" value=" Save "> 
+                 <input style="color:pink; padding:3px; border:1px solid pink; background-color: green" type="submit" value=" Save "> 
             </div>
       </form>
   </div>
+
 
 </div>
   
