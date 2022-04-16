@@ -10,12 +10,15 @@ use App\Models\User;
 
 use App\Models\Services;
 
+use App\Models\Salonstylists;
+
 class HomeController extends Controller
 {
     public function index()
     {
         $data=services::all();
-        return view("home", compact("data"));
+        $data2=salonstylists::all();
+        return view("home", compact("data", "data2"));
     }
 
     public function redirects()

@@ -22,7 +22,7 @@
             <th style="padding: 30px;">Name👧</th>
             <th style="padding: 30px;">Email📧</th>
             <th style="padding: 30px;">Phone📞</th>
-            <th style="padding: 30px;">Guest🙎‍♀️🙎‍♂️</th>
+            <th style="padding: 30px;">Guest🙎👶👵</th>
             <th style="padding: 30px;">Date🎰</th>
             <th style="padding: 30px;">Time⌚</th>
             <th style="padding: 30px;">Message📜</th>

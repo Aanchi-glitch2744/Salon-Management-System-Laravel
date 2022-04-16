@@ -10,7 +10,7 @@ use App\Models\Services;
 
 use App\Models\Reservation;
 
-
+use App\Models\Salonstylists;
 
 class AdminController extends Controller
 {
@@ -109,4 +109,30 @@ class AdminController extends Controller
         $data=reservation::all();
         return view("admin.adminreservation", compact("data"));
     }
+    
+    public function viewstylist()
+    {
+        
+        return view("admin.adminstylist");
+    } 
+    
+    public function uploadstylist(Request $request)
+    {
+        $data= new salonstylists;
+
+        $image=$request->image;
+
+        $imagename =time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('stylistimage', $imagename);
+
+        $data->image=$imagename;
+        $data->name=$request->name;
+        $data->speciality=$request->speciality;
+
+        $data->save();
+        return redirect()->back();
+    }
+
+
 }
