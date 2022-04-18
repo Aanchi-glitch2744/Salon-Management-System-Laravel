@@ -14,7 +14,9 @@
 
   <div class="container-scroller">
   
-  @include("admin.navbar")  
+  @include("admin.navbar") 
+  
+  WELCOME TO ADMIN PANEL
 
 </div>
   
