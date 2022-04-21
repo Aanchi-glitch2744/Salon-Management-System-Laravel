@@ -46,7 +46,7 @@
           
            <table bgcolor="black">
                <tr>
-                    <th style="padding: 30px">Food Name</th>
+                    <th style="padding: 30px">Service Name</th>
                     <th style="padding: 30px">Price</th> 
                     <th style="padding: 30px">Description</th>
                     <th style="padding: 30px">Image</th>
